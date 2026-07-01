@@ -13,8 +13,9 @@
         {% for i in tarefas %}
             <li>
                 {{ i }}
+                <a href="/remove/{{ loop.index0 }}">Remover</a> <!--Ainda vou criar a rota disso, calma. -->
             </li>
-            <a href="/remove/indice = loop.index0">Remover</a> <!--Ainda vou criar a rota disso, calma. -->
+            
         {% endfor %}
      </ul>
 {% endblock %}
